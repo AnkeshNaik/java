@@ -1,0 +1,31 @@
+package Overloading;
+
+public class constructor {//constructor
+	double a;
+	double b;
+	
+
+	constructor(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+	
+	constructor(double a, double b) {
+		this.a = a;
+		this.b = b;
+	}
+	
+
+
+	public static void main(String[] args) {
+		constructor c1 = new constructor(100, 10);
+		constructor c2 = new constructor(100.1, 10.10);
+		
+		double sum1 =c1.a+c1.b;//explicit type conversion
+		System.out.println("the sum1 is"+sum1);
+		double sum2 =c2.a+c2.b;
+		System.out.println("the sum1 is"+sum2);
+
+	}
+
+}
