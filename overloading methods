@@ -1,0 +1,36 @@
+package Overloading;
+
+public class method {
+	
+	public void sum(int a,int b) {
+		int sum = a+b;
+		System.out.println("sum1 is "+sum);
+		
+	}
+	public void sum(double a,double b) {
+		double sum = a+b;
+		System.out.println("sum2 is "+sum);
+		
+	}
+	public void sum(String a,String b) {
+		String sum = a+b;
+		System.out.println("sum3 is "+sum);
+		
+	}
+
+	public static void main(String[] args) {
+		method m = new method();
+		 m.sum(10,20);
+		 
+		 m.sum(10,50);
+		 
+		 m.sum(10.0,20.9);
+		 
+		 m.sum(10.11,20);
+		 
+		 m.sum("ankesh", "naik");
+		
+
+	}
+
+}
